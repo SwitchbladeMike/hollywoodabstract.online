@@ -22,7 +22,7 @@ body {
 }
 
 header {
-    font: var (--primaryfont);
+
     font-size: 3em;
     background-color: #321E1E;
     color: white;
@@ -31,7 +31,7 @@ header {
 }
 
 nav ul {
- font: var (--primaryfont);
+
     font-size: .69em;
     list-style: none;
     padding: 0;
