@@ -9,7 +9,7 @@
  
   --color1 : #116D6E;
   --color2 : #321E1E;
-  --color3 : #4E3636;
+  --color3 : rgba(83, 83, 83, 0.8);;
   --color4 : #CD1818;
 }
 
@@ -19,27 +19,27 @@ body {
     margin: 0;
     padding: 0;
     background-image: url('backround.jpg');
-    background-size: cover; /* This ensures the background covers the whole screen */
-    background-position: center; /* This centers the background image */
-    background-repeat: no-repeat; /* This prevents the background from repeating */
-    background-attachment: fixed; /* This makes the background image fixed while scrolling */
-    color: #ffffff; /* Optional: Set the text color to be readable over the background */
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+    color: #ffffff; /
 }
 header {
 
     font-size: 3em;
     font-optical-sizing: auto;
     background-color: rgba(83, 83, 83, 0.8);
-    color: white;
+    color: var(--color1);
 
     padding: 2rem 0;
     text-align:center;
-    ;
+    
 }
 .container {
     display: flex;
     justify-content: right; 
-    align-items: center; /
+    align-items: center; 
 }
 
 .profile-image {
@@ -69,12 +69,13 @@ nav ul li a {
 section {
     padding: 2rem;
     margin: 1rem 0;
-    background-color: var(--color1)
+    background-color: var(--color1);
     border: 1px solid #ddd;
 }
+
 #portfolio {
     padding: 2rem;
-    background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent background */
+    background-color: rgba(255, 255, 255, 0.8); 
     border: 1px solid #ddd;}
 
 #lightgallery {
@@ -96,13 +97,44 @@ section {
     display: block;
 }
 
+.contact-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
 
-    footer {
+.contact-link {
+    color: #333;
+    text-decoration: none;
+    font-size: 1.2rem; 
+    display: flex;
+    align-items: center;
+}
+
+.contact-link img{
+    margin-right: 10px;
+    font-size: 1.5rem; 
+}
+
+.contact-link:hover {
+    color: #007bff;
+}
+
+
+div a img{ 
+    width:2em;
+    vertical-align: middle;
+    margin-right: .5em;
+}
+footer {
+   
     text-align: center;
     padding: 1rem 0;
-    background-color: #333;
+    background-color: var(--color3);
     color: white;
     position: fixed;
     width: 100%;
+
     bottom: 0;
 }
