@@ -25,7 +25,7 @@ header {
 
     font-size: 3em;
     background-color: #321E1E;
-    color: white;
+    color: var(--color1)
     padding: 1rem 0;
     text-align: center;
 }
@@ -53,7 +53,30 @@ section {
     background-color: white;
     border: 1px solid #ddd;
 }
+#portfolio {
+    padding: 2rem;
+    background-color: white;
+    border: 1px solid #ddd;
+}
 
+#lightgallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+#lightgallery a {
+    display: block;
+    width: calc(33% - 10px);
+    margin-bottom: 10px;
+}
+
+#lightgallery img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
 footer {
     text-align: center;
     padding: 1rem 0;
