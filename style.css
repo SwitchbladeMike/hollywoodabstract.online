@@ -9,7 +9,7 @@
  
   --color1 : #116D6E;
   --color2 : #321E1E;
-  --color3 : rgba(83, 83, 83, 0.8);;
+  --color3 : rgba(83, 83, 83, 0.8);
   --color4 : #CD1818;
 }
 
@@ -23,7 +23,7 @@ body {
     background-position: center; 
     background-repeat: no-repeat; 
     background-attachment: fixed; 
-    color: #ffffff; /
+    color: var(--color2); /
 }
 header {
 
@@ -70,7 +70,7 @@ section {
     padding: 2rem;
     margin: 1rem 0;
     background-color: var(--color1);
-    border: 1px solid #ddd;
+    border: 1px solid #ffffff;
 }
 
 #portfolio {
@@ -97,18 +97,17 @@ section {
     display: block;
 }
 
-.contact-links {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
+#contact {
+
+padding-bottom: 75px;
+
 }
 
-.contact-link {
+.contact-links {
     color: #333;
     text-decoration: none;
     font-size: 1.2rem; 
-    display: flex;
+    display: inline-block;
     align-items: center;
 }
 
@@ -118,15 +117,32 @@ section {
 }
 
 .contact-link:hover {
+
     color: #007bff;
 }
 
+.miguelpicture {
+
+float: left;
+margin-right: 1em;
+max-width: 150px;
+
+}
+/* figure out clearfix */
+.clearfix::after {
+
+content: "";
+display: table;
+clear: both;
+
+}
 
 div a img{ 
     width:2em;
     vertical-align: middle;
     margin-right: .5em;
 }
+
 footer {
    
     text-align: center;
