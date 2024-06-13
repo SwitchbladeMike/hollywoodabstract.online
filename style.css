@@ -97,16 +97,19 @@ section {
 }
 
 nav a {
-    color: var(--textcolor);
-    text-decoration: none;
-    margin: 0;
-    padding: 1em;}
-    
-a:link, a:visited {
-
     color: var(--color1);
     text-decoration: none;
-    margin: 0 0.25em;}
+    margin: 0;
+    padding: 1em;
+  }
+  
+  nav a img { 
+    width: 2em;
+    vertical-align: middle;
+    margin-right: .5em;
+  }
+
+
 
     footer {
     text-align: center;
